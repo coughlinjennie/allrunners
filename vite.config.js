@@ -13,6 +13,8 @@ export default defineConfig({
         interactive: resolve(__dirname, 'interactive/index.html'),
         growing: resolve(__dirname, 'growing/index.html'),
         snowing: resolve(__dirname, 'snowing/index.html'),
+        'stained-glass': resolve(__dirname, 'stained-glass/index.html'),
+        scrollytelly: resolve(__dirname, 'scrollytelly/index.html'),
       },
     },
   },
