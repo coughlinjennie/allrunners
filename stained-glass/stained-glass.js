@@ -12,14 +12,7 @@ const points = Array.from({ length: numPoints }, () => [
   Math.random() * height,
 ]);
 
-// Use a fixed t to get an interesting organic spread 
-const t = 1.4;
-const movedPoints = points.map(([x, y], i) => [
-  x + 1.5 * Math.sin(t + i * i),
-  y + 2.0 * Math.cos(t + i * i),
-]);
-
-const delaunay = d3.Delaunay.from(movedPoints);
+const delaunay = d3.Delaunay.from(points);
 const voronoi = delaunay.voronoi([0, 0, width, height]);
 
 // A rich stained-glass palette
