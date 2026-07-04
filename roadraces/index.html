@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>A Look At The Entire Road Racing Community</title>
+  <link rel="stylesheet" href="../main.css">
+  <style>
+    .scrolly-container {
+      display: flex;
+      align-items: flex-start;
+      gap: 2rem;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    .sticky-graphic {
+      position: sticky;
+      top: 20vh;
+      flex: 0 0 400px;
+    }
+
+    #d3-scrolly {
+      width: 400px;
+      height: 360px;
+      border-radius: 8px;
+      background: rgba(255, 255, 255, 0.05);
+      overflow: visible;
+    }
+
+    #d3-scrolly .tick text {
+      fill: #080707;
+      font-size: 12px;
+    }
+    #d3-scrolly .domain,
+    #d3-scrolly .tick line {
+      stroke: rgba(255, 255, 255, 0.3);
+    }
+
+    .steps {
+      flex: 1;
+      padding: 0 1rem;
+    }
+
+    .step {
+      min-height: 60vh;
+      display: flex;
+      align-items: center;
+      padding: 2rem;
+      background: rgba(255, 255, 255, 0.05);
+      border-radius: 8px;
+      margin-bottom: 4rem;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      transition: border-color 0.3s;
+    }
+
+    .step.is-active {
+      border-color: rgba(255, 255, 255, 0.4);
+    }
+
+    .step p {
+      font-size: 1rem;
+      line-height: 1.6;
+      color: #080707;
+    }
+
+    .spacer {
+      height: 20vh;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Aligning Running Industry Standards With the Full Road Racing Community</h1>
+    <p>The road racing community has exploded in size with the latest running boom, prompted by the COVID-19 pandemic and people’s need for an exercise option that allowed for social distancing. Marathons are selling out faster than ever, time standards keep getting faster and there are many more run clubs and crews. At the same time, slower runners are becoming more common as activists like Latoya Shauntay Snell and Martellus Evans, founder of the Slow AF Run Club, have pushed races to be more inclusive. </p>
+    <p> </p>
+    <p>New York Road Runners is one of the largest road racing organizations in the United States, and they started lengthening course time limits in late 2022 to allow more slower runners to finish their races. Because of New York’s racial and ethnic diversity and NYRR’s programs to encourage youth, senior citizen and low-income runners to participate, NYRR race results over-represent many groups of runners who traditionally have been excluded or sidelined by the sport’s roots among fast, white men. The organization also has two races geared specifically for women and partners with Achilles on a race each year. Achilles is one of the best-known running clubs geared to athletes with disabilities, and the NYRR race is the club’s biggest race in the United States each year. NYRR also was the first organization to allow nonbinary entrants in a World Marathon Major and has that as an entry option for all its races. All of these factors make NYRR race results well-suited to examine how running industry standards affect a larger, more diverse and more inclusive road racing community. </p>
+    <p> </p>
+    <p>When we look at NYRR race results and compare them to various running industry standards, including some of the Road Runners’ own, it’s possible to see where and how the running community could update training programs, course time standards and race organization to better reflect the road racing community as it exists today.</p>
+   <div class="spacer"></div>
+   <h2>Couch to 5K is the Beginning Runner Standard</h2>
+    <div class="main-body">
+      <div class="scrolly-container">
+        <div class="sticky-graphic">
+          <svg id="d3-scrolly"></svg>
+        </div>
+        <div class="steps">
+          <div class="spacer"></div>
+
+          <div class="step" data-step="0">
+            <p>Couch to 5K, often abbreviated C25K, has become shorthand for a number of beginner-friendly programs that move from walking to walk/run to running over eight or nine weeks. The branding is clear: This program will help you run a 5K. If you read the details, though, that’s not quite what it does. The program is designed so “after 8 weeks, you’re ready to run 5 kilometers or 30 minutes non stop” according to the website. A substantial portion of the 5K race field takes more than 30 minutes to finish the race. This is all runners, not just beginners. Since training gains compound over time, we can infer that all other things being equal, experienced runners are more likely to be faster at every age and gender point than beginner runners. </p>
+          </div>
+
+          <div class="step" data-step="1">
+            <p>The average finish time for women in all NYRR 5K races is slower than 30 minutes. For a sport that banned women from competition for life for racing more than 200 meters as late as 1959, this is a gap between industry standards and reality that tells many women who are beginning to run they aren’t good enough. </p>
+          </div>
+
+          <div class="step" data-step="2">
+            <p>If we expand the time from 30 minutes to 35 minutes, that is just above the 75th percentile of the 5K field, so a training program that got runners to that point would allow three-quarters of them to complete the race. </p>
+          </div>
+
+          <div class="step" data-step="3">
+            <p>The higher threshold still has a larger share of men than women finishing, but about two-thirds of the women finish under that threshold. </p>
+          </div>
+
+          <div class="step" data-step="4">
+            <p>If we go to 50 minutes, which is just above the high outlier threshold, that captures the bulk of the finishes. A beginner running program that was designed to allow most people who complete it to finish a 5K would provide training up to 50 minutes, with off-ramps for faster runners to take when they were ready to run a 5K road race. </p>
+          </div>
+
+          <div class="spacer"></div>
+        </div>
+      </div>
+    </div>
+    <div class="spacer"></div>
+    <h2>Start Line Organization Bunches Up Slow Runners</h2>
+    <div class="main-body">
+      <div class="scrolly-container">
+        <div class="sticky-graphic">
+          <svg id="d3-scrolly"></svg>
+        </div>
+        <div class="corrals">
+          <div class="spacer"></div>
+
+          <div class="corral" data-corral="0">
+            <p>Couch to 5K, often abbreviated C25K, has become shorthand for a number of beginner-friendly programs that move from walking to walk/run to running over eight or nine weeks. The branding is clear: This program will help you run a 5K. If you read the details, though, that’s not quite what it does. The program is designed so “after 8 weeks, you’re ready to run 5 kilometers or 30 minutes non stop” according to the website. A substantial portion of the 5K race field takes more than 30 minutes to finish the race. This is all runners, not just beginners. Since training gains compound over time, we can infer that all other things being equal, experienced runners are more likely to be faster at every age and gender point than beginner runners. </p>
+          </div>
+
+          <div class="corral" data-corral="1">
+            <p>The average finish time for women in all NYRR 5K races is slower than 30 minutes. For a sport that banned women from competition for life for racing more than 200 meters as late as 1959, this is a gap between industry standards and reality that tells many beginning runners they aren’t good enough. </p>
+          </div>
+
+          <div class="corral" data-corral="2">
+            <p>If we expand the time from 30 minutes to 35 minutes, that is just above the 75th percentile of the 5K field, so a training program that got runners to that point would allow three-quarters of them to complete the race. If we go to 50 minutes, which is just above the high outlier threshold, that captures the bulk of the finishes. </p>
+          </div>
+
+          <div class="corral" data-corral="3">
+            <p>A beginner running program that was designed to allow most people who complete it to finish a 5K would provide training up to 50 minutes, with off-ramps for faster runners to take when they were ready to run a 5K road race. </p>
+          </div>
+
+          <div class="spacer"></div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <script type="module" src="scrollytelly.js"></script>
+</body>
+</html>

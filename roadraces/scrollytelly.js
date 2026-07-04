@@ -10,38 +10,80 @@ import '../main.css';
 const steps = [
   {
     data: [
-      { label: 'Apple',  value: 12 },
-      { label: 'Banana', value:  5 },
-      { label: 'Cherry', value:  8 },
-      { label: 'Mango',  value:  3 },
+      { label: 'Sub-30',  value: 66357 },
+      { label: '30+', value:  57869 },
     ],
   },
   {
     data: [
-      { label: 'Apple',  value: 18 },
-      { label: 'Banana', value: 14 },
-      { label: 'Cherry', value:  9 },
-      { label: 'Mango',  value:  6 },
+      { label: 'Women Sub-30',  value: 24607 },
+      { label: 'Women 30+', value: 37004 },
+      { label: 'Men Sub-30', value:  41519 },
+      { label: 'Men 30+',  value:  20621 },
     ],
   },
   {
     data: [
-      { label: 'Apple',  value: 20 },
-      { label: 'Banana', value: 16 },
-      { label: 'Cherry', value: 10 },
-      { label: 'Mango',  value: 22 },
+      { label: 'Sub-35',  value: 93652 },
+      { label: '35+', value:  30574 },
     ],
   },
   {
     data: [
-      { label: 'Apple',  value: 25 },
-      { label: 'Banana', value: 20 },
-      { label: 'Cherry', value: 14 },
-      { label: 'Mango',  value: 30 },
+      { label: 'Women Sub-35',  value: 41330 },
+      { label: 'Women 35+', value: 20281 },
+      { label: 'Men Sub-35', value:  51977 },
+      { label: 'Men 35+',  value:  10163 },
+    ],
+  },
+  {
+    data: [
+      { label: 'Sub-50',  value: 118799 },
+      { label: '50+', value:  5427 },
     ],
   },
 ];
 // ──────────────────────────────────────────────────────────────────────────────
+
+//_________CORRALS______________
+const corrals = [
+  {
+    data: [
+      { label: 'Corrals AA-K',  value: 123389 },
+      { label: 'Corral L', value:  27838 },
+    ],
+  },
+  {
+    data: [
+      { label: 'Women Sub-30',  value: 24607 },
+      { label: 'Women 30+', value: 37004 },
+      { label: 'Men Sub-30', value:  41519 },
+      { label: 'Men 30+',  value:  20621 },
+    ],
+  },
+  {
+    data: [
+      { label: 'Sub-35',  value: 93652 },
+      { label: '35+', value:  30574 },
+    ],
+  },
+  {
+    data: [
+      { label: 'Women Sub-35',  value: 41330 },
+      { label: 'Women 35+', value: 20281 },
+      { label: 'Men Sub-35', value:  51977 },
+      { label: 'Men 35+',  value:  10163 },
+    ],
+  },
+  {
+    data: [
+      { label: 'Sub-50',  value: 118799 },
+      { label: '50+', value:  5427 },
+    ],
+  },
+];
+
+//------------------------------------
 
 // ─── CHART SETUP ──────────────────────────────────────────────────────────────
 const margin = { top: 20, right: 20, bottom: 40, left: 40 };
